@@ -27,4 +27,6 @@ def magic_array(array)
     .reject { |v| v % 3 == 0 } # Eliminates multiples of 3 (works also with delete_if { |v| v % 3 == 0 })
     .uniq # Remove all duplicates
     .sort # Reorganise
+
+     # Another way : array.flatten(3).map{|i| i * 2}.uniq.keep_if{|i| i%3 != 0 }.sort
 end

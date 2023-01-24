@@ -21,7 +21,7 @@ end
 def titleize(string)
     small_words = ["the", "and", "of"]
     string = string.split(' ')
-    .each{|i| i.capitalize! if ! small_words.include? i}
+    .each{|i| i.capitalize! if ! small_words.include? i} # if ! revient à faire unless
     .join(' ')
 
     first_letter = string[0].upcase
